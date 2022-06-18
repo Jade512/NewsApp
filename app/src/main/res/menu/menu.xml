@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_baseline_newspaper_24"
+        android:title="News Feed"
+        app:cnb_iconColor="#055EF4" />
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="Favorite News"
+        app:cnb_iconColor="#FA0E0E" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search News"
+        app:cnb_iconColor="#12D604" />
+
+</menu>

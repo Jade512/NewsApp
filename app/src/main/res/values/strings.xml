@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewsUsApp</string>
+    <string name="published_at">PUBLISHED AT</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="title">TITLE</string>
+    <string name="source">SOURCE</string>
+</resources>

@@ -6,7 +6,18 @@
     android:background="@color/white"
     tools:context=".ui.fragments.BreakingNewsFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="News Feed"
+        android:textSize="30sp"
+        android:textColor="#2873F1"
+        android:padding="5dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"
+        android:id="@+id/title" />
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/rvBreakingNews"

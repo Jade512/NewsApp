@@ -23,7 +23,7 @@ class ArticleActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val repository = NewsRepository(ArticleDatabase(this))
-        val viewModelProviderFactory = NewsViewModelFactory(repository)
+        val viewModelProviderFactory = NewsViewModelFactory(application,repository)
         viewModel = ViewModelProvider(this,viewModelProviderFactory)[NewsViewModel::class.java]
 
         val article = intent.getSerializableExtra("article") as Article

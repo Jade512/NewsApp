@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val newsRepository = NewsRepository(ArticleDatabase(this))
-        val newsViewModelProviderFactory = NewsViewModelFactory(newsRepository)
+        val newsViewModelProviderFactory = NewsViewModelFactory(application,newsRepository)
         viewModel = ViewModelProvider(this,newsViewModelProviderFactory)[NewsViewModel::class.java]
         Log.e("AAA",viewModel.breakingNews.toString())
 
